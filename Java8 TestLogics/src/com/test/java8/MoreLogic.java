@@ -1,4 +1,4 @@
-package zom.test;
+package com.test.java8;
 
 import java.util.Arrays;
 import java.util.List;

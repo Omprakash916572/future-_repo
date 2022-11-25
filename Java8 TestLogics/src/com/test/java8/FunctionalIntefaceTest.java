@@ -1,4 +1,4 @@
-package zom.test;
+package com.test.java8;
 
 @FunctionalInterface
 public interface FunctionalIntefaceTest {
