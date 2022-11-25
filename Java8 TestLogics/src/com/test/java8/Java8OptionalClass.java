@@ -3,7 +3,7 @@ package com.test.java8;
 import java.util.Arrays;
 import java.util.Optional;
 
-import zom.test.dto.Customer;
+import com.test.dto.Customer;
 
 public class Java8OptionalClass {
 

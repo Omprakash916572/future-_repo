@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import zom.test.dto.Customer;
+import com.test.dto.Customer;
 
 public class StremLogic {
 

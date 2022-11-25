@@ -1,4 +1,4 @@
-package zom.test.dto;
+package com.test.dto;
 
 public class Book {
 
