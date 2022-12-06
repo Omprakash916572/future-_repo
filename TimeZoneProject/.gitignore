@@ -1,0 +1,12 @@
+*.class
+.apt_generated
+.apt_generated_tests
+.classpath
+.project
+.settings/
+/.settings
+bin/
+bin
+target
+target/
+.sts4-cache
