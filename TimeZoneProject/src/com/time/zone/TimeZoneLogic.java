@@ -78,5 +78,20 @@ public class TimeZoneLogic {
 		return pstFormat.format(date);
 
 	}
+	
+	// Convert 03-Jan-2023 to  01/03/2023
+
+	public static String dateFormatConverter(String strDate) {
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
+		try {
+			Date varDate = dateFormat.parse(strDate);
+			dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+			return dateFormat.format(varDate);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return null;
+	}
 
 }
