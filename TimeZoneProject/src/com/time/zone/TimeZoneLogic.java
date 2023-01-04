@@ -93,5 +93,24 @@ public class TimeZoneLogic {
 		}
 		return null;
 	}
+	
+	
+		// Covert Time To UTC
+	
+		String strTime = "12:00";
+		String usedTime = "";
+		
+		LocalTime currentTime = LocalTime.parse(strTime.trim(), DateTimeFormatter.ofPattern("HH:mm")).withSecond(0);
+		
+		LocalDate localDate = LocalDate.now();
+		java.time.LocalDateTime localDateTime = currentTime.atDate(localDate);
+		ZoneId zoneId = ZoneId.of("UTC");
+		ZoneId zoneId2 = ZoneId.of("+05:30");
+		ZonedDateTime zonedDateTime = localDateTime.atZone(zoneId).withZoneSameInstant(zoneId2);
+		if (!usedTime.isEmpty()) {
+			usedTime = usedTime + ",";
+		}
+		usedTime = usedTime + zonedDateTime.getHour() + ":" + zonedDateTime.getMinute();
+		System.out.println(usedTime);
 
 }
