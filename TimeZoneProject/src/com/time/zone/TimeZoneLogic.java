@@ -113,7 +113,7 @@ public class TimeZoneLogic {
 		usedTime = usedTime + zonedDateTime.getHour() + ":" + zonedDateTime.getMinute();
 		System.out.println(usedTime);
 	
-	// Convert String To LocalDate
+	// Convert String To LocalDate "2023-01-04"
 	public static LocalDate convertStringToLocalDate(String strDate) {
 		LocalDate dateTime = LocalDate.parse(strDate);
 		return dateTime;
