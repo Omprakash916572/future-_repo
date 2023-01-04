@@ -115,7 +115,6 @@ public class TimeZoneLogic {
 	
 	// Convert String To LocalDate
 	public static LocalDate convertStringToLocalDate(String strDate) {
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		LocalDate dateTime = LocalDate.parse(strDate);
 		return dateTime;
 	}
