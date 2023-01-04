@@ -115,7 +115,8 @@ public class TimeZoneLogic {
 	
 	// Convert String To LocalDate "2023-01-04"
 	public static LocalDate convertStringToLocalDate(String strDate) {
-		LocalDate dateTime = LocalDate.parse(strDate);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		LocalDate dateTime = LocalDate.parse(strDate,formatter);
 		return dateTime;
 	}
 
