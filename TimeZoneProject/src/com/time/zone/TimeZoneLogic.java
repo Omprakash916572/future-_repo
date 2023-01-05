@@ -119,6 +119,18 @@ public class TimeZoneLogic {
 		LocalDate dateTime = LocalDate.parse(strDate,formatter);
 		return dateTime;
 	}
+	
+	
+		
+//		Thu Jan 05 11:44:20 IST 2023
+//		05-January-2023
+	
+		Date date = new Date();
+		System.out.println(date);
+		SimpleDateFormat DateFor = new SimpleDateFormat("dd-MMMM-yyyy");
+		String stringDate = DateFor.format(date);
+		System.out.println(stringDate);
+
 
 
 }
