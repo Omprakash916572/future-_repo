@@ -118,6 +118,12 @@ public class TimeZoneLogic {
 		LocalDate dateTime = LocalDate.parse(strDate);
 		return dateTime;
 	}
+	
+	//Convert String dateTime to Diff format  == 10/08/2022 14:42:00 = 10-Aug-2022 14:42:00
+
+	DateFormat targetFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	Date formattedDate = targetFormat.parse(call.getCallDateTimeString());
+	String format = new SimpleDateFormat(this.New_Default_Date_Time_Format).format(formattedDate);
 
 
 }
