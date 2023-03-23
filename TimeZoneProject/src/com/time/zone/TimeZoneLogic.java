@@ -124,6 +124,16 @@ public class TimeZoneLogic {
 	DateFormat targetFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 	Date formattedDate = targetFormat.parse(call.getCallDateTimeString());
 	String format = new SimpleDateFormat(this.New_Default_Date_Time_Format).format(formattedDate);
+	
+		## Convert string date to new format.
+			
+		String inputDate = "2020-03-15";
+		DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		LocalDate date = LocalDate.parse(inputDate, inputFormatter);
+
+		DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		System.out.println("Output date: " + date.format(outputFormatter));
 
 
 }
